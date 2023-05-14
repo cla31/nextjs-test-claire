@@ -1,21 +1,13 @@
 import getAllUsers from '/lib/getAllUsers'
 import Link from "next/link"
 
-// const getAllUsers = async()=>{
-//     const res = await fetch('https://jsonplaceholder.typicode.com/users')
-//     console.log("fetch ok");
-
-//     if (!res.ok) throw new Error('failed to fetch data')
-
-//     return res.json()
-// }
 
 export default async function UsersPage() {
     const users = await getAllUsers()
    
 
-    console.log("log hello",'Hello') // Did you find where this appears?
-    console.log("log users",users) // Did you find where this appears?
+    // console.log("log hello",'Hello')
+    // console.log("log users",users) 
 
     const content = (
         <section>
