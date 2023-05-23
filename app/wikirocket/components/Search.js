@@ -11,6 +11,8 @@ export default function Search() {
     const handleSubmit = async (e) => {
         e.preventDefault()
         setSearch('')
+        //utilise la méthode router.push pour naviguer vers une nouvelle URL, 
+        // en utilisant la valeur de search dans le chemin de l'URL.
         router.push(`/${search}/`)
     }
 

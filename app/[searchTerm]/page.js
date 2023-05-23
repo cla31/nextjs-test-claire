@@ -1,6 +1,6 @@
 import getWikiResults from "/lib/getWikiResults"
 
-
+// création de la route dynamique
 export async function generateMetadata({ params: { searchTerm } }) {
     const wikiData = getWikiResults(searchTerm)
     const data = await wikiData
